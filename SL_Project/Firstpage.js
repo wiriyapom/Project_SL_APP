@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import { AppRegistry } from 'react-native';
 import { useEffect } from 'react';
 import LoginSceen from './Login';
@@ -15,7 +15,8 @@ export default function Firstpage({ navigation }) {
     return (
     <View style={styles.container}>
       <Text>Welcome to Sign Languags Appication</Text>
-      <StatusBar style="auto" />
+      <Image source={require('./image/6268080.png')} style={styles.image}
+      />
     </View>
   );
 }
@@ -25,8 +26,11 @@ AppRegistry.registerComponent(LoginSceen, () => Firstpage);
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#99FFCC',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  image :{
+    marginBottom: 30
+  }
 });

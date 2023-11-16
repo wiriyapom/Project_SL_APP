@@ -1,5 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View , TextInput, TouchableOpacity, ImageBackground} from 'react-native';
+
+// const LoginScreen = () => {
+//     const [username, setUsername] = useState('');
+//     const [password, setPassword] = useState('');
 
 export default function Login() {
     return (
